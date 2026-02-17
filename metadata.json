@@ -1,0 +1,7 @@
+{
+  "name": "Copy of UPSC Ease",
+  "description": "An AI-powered learning companion for UPSC aspirants featuring daily current affairs, a personal AI mentor, Mains answer evaluation, and interactive practice quizzes.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
