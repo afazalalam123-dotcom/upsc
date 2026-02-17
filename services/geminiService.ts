@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
-import { QuizQuestion, EvaluationResult, StudyPlanParams } from "../types";
+import { QuizQuestion, EvaluationResult, StudyPlanParams } from "../types.ts";
 
 // Fix: Initialize GoogleGenAI using process.env.API_KEY directly as per guidelines
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import { generateMockTest } from '../services/geminiService';
-import { QuizQuestion, MockTestResult } from '../types';
+import { generateMockTest } from '../services/geminiService.ts';
+import { QuizQuestion, MockTestResult } from '../types.ts';
 
 const MockTest: React.FC = () => {
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);

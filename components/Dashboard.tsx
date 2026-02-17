@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AppView, MockTestResult } from '../types';
+import { AppView, MockTestResult } from '../types.ts';
 
 const Dashboard: React.FC<{ setView: (v: AppView) => void }> = ({ setView }) => {
   const historyRaw = localStorage.getItem('upsc_mock_history');

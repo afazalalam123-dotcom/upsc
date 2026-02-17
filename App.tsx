@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import AITutor from './components/AITutor';
-import CurrentAffairs from './components/CurrentAffairs';
-import MainsEvaluator from './components/MainsEvaluator';
-import PracticeZone from './components/PracticeZone';
-import StudyPlanner from './components/StudyPlanner';
-import MockTest from './components/MockTest';
-import { AppView } from './types';
+import Sidebar from './components/Sidebar.tsx';
+import Dashboard from './components/Dashboard.tsx';
+import AITutor from './components/AITutor.tsx';
+import CurrentAffairs from './components/CurrentAffairs.tsx';
+import MainsEvaluator from './components/MainsEvaluator.tsx';
+import PracticeZone from './components/PracticeZone.tsx';
+import StudyPlanner from './components/StudyPlanner.tsx';
+import MockTest from './components/MockTest.tsx';
+import { AppView } from './types.ts';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<AppView>(AppView.DASHBOARD);

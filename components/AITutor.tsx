@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { getAITutorResponse } from '../services/geminiService';
+import { getAITutorResponse } from '../services/geminiService.ts';
 
 const AITutor: React.FC = () => {
   const [messages, setMessages] = useState<{role: 'user' | 'model', text: string}[]>([
