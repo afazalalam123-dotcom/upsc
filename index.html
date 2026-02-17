@@ -11,13 +11,18 @@
       body {
         font-family: 'Inter', sans-serif;
         background-color: #f8fafc;
+        margin: 0;
+        padding: 0;
       }
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+      /* Ensure the root takes full height to prevent blank-looking screens */
+      #root {
+        min-height: 100vh;
       }
     </style>
+    <script>
+      // Prevent 'process is not defined' errors during module initialization
+      window.process = { env: { API_KEY: "" } };
+    </script>
     <script type="importmap">
 {
   "imports": {
@@ -30,9 +35,9 @@
   }
 }
 </script>
-    <script type="module" src="index.tsx"></script>
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>
